@@ -10,12 +10,12 @@
     background-position: center;
     background-size: cover;
     position: relative;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(milk-2474993.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.865),rgba(4, 9, 30, 0.957)),url(milk-2474993.jpg);
 }
 
 nav{
     display: flex;
-    padding: 2% 6%;
+    padding: 2px 2px;
     justify-content: space-between;
     align-items: center;
 }
@@ -32,8 +32,8 @@ nav img{
 .nav-links ul li{
     list-style: none;
     display: inline-block;
-    padding: 8px,12px;
     position: relative;
+    padding: 4px;
 }
 
 .nav-links ul li a{
