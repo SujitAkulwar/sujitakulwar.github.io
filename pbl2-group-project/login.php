@@ -45,7 +45,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;                            
                             
-                            header("location: indexloginafter.php");
+                            header("location: indexloginafter.html");
                         } else{
                             $login_err = "Invalid username or password.";
                         }
@@ -78,7 +78,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
     <div>
-        <a href="index.php">home</a>
+        <a href="index.html">home</a>
     </div>
     <div class="wrapper">
         <h2>Login</h2>
