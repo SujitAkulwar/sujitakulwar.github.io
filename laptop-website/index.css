@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: linear-gradient(to right top, hwb(240 50% 16%), #7f87d9, #7f8fdd, #8097e1, #829ee4, #7ba8e9, #75b2ed, #73bbef, #6cc8f0, #70d5ee, #7de0e9, #91eae4);
+}
+.header{
+    height: 10vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.head1,.head2,.nav-links,.head3{
+    display: flex;
+}
+.head1{
+    flex: 1;
+}
+.head1 a img{
+    width: 8vh;
+}
+.head2{
+    flex: 4;
+    font-weight: 400;
+}
+.head3 a img{
+    width: 8vh;
+}
+.nav-links{
+    list-style: none;
+    margin: auto;
+    align-items: space-around;
+}
+.nav-link{
+    padding: 5px 35px 5px 35px;
+    font-size: 20px;
+    color: #2d2d6d;
+    text-decoration: none;
+}
+.head3{
+    flex: 1;
+    justify-content: flex-end;
+}
+.mid{
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    flex: 1;
+}
+.left img{
+    width: 80vh;
+}
+.right{
+    flex: 1;
+    color: rgb(45, 45, 60);
+}
+
+.button{
+    display: flex;
+    margin: 0vh 50vh 0vh 0vh;
+    height: 10vh;
+}
+.alt{
+    flex: 1;
+    border: 0.3vh;
+    border-style: solid;
+    border-color: rgb(45, 45, 60);
+    font-size:15px;
+    font-weight: 600;
+    color:rgb(45, 45, 60);
+    margin: 1vh 1vh 1vh 0vh;
+    background-image: linear-gradient(to right top, rgba(127, 134, 217, 0.6), rgb(127, 143, 221, 0.6),rgba(128, 151, 225, 0.6));
+}
+.add{
+    flex: 1;
+    border: 0.3vh;
+    border-style: solid;
+    border-color: rgb(45, 45, 60);
+    font-size:15px;
+    font-weight: 600;
+    margin-left: -0.2vh;
+    color: rgb(45, 45, 60);
+    margin: 1vh;
+    background-image: linear-gradient(to right top, rgba(127, 134, 217, 0.6), rgba(127, 143, 221, 0.6),rgba(128, 151, 225, 0.6));
+}
+.footer{
+    height: 10vh;
+    width: 100vh;
+    display: flex;
+    margin: auto;
+    color: rgb(70, 70, 100);
+}
+.copy{
+    margin: auto;
+}
+.copy p{
+    margin: auto;
+    font-weight: 200;
+}
