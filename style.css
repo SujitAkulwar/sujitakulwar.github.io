@@ -1,12 +1,15 @@
 *{
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    font-size: 4vh;
-    width: 80%;
-    background-color: rgba(0, 0, 0, 0.4);
 }
 body{
-    background-image: ;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4vh;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("1.jpg");
+    background-repeat: no-repeat;
+    border-radius: 5vh;
+    padding: 8vh;
+    background-size:cover;
 }
