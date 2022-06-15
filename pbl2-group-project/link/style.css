@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+div {
+    text-decoration: none;
+}
+
+body {
+    background: lightblue url(library-1834222.jpg) no-repeat fixed center;
+    background-size: cover;
+
+}
+
+header {
+    flex: 1;
+}
+
+.top {
+    flex: 1;
+    display: flex;
+    padding-top: 4vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: cover;
+}
+
+.item1 {
+    margin-left: 8vh;
+    padding: 2vh;
+}
+
+.item3 {
+    padding: 2vh;
+    margin-right: 8vh;
+}
+
+.item1 img {
+    max-width: 15vh;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border-radius: 2vh;
+}
+
+.item3 img {
+    max-width: 15vh;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border-radius: 2vh;
+}
+
+.item2 {
+    /* PES’s Modern College of Engineering, Pune BOOK MANAGEMENT SYSTEM */
+    float: center;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+}
+
+
+#name1 {
+    font-weight: bolder;
+    word-spacing: .3vh;
+    justify-content: center;
+    color: rgb(255, 255, 82);
+    font-size: 5vh;
+    text-shadow: 22vh 22vh 32vh rgb(0, 0, 0);
+}
+
+#name2 {
+    font-weight: bolder;
+    word-spacing: .3vh;
+    justify-content: center;
+    color: rgb(255, 255, 200);
+    font-size: 5vh;
+    text-shadow: 2vh 2vh 3vh rgb(0, 0, 0);
+}
+
+.nav_bar {
+    padding: 15px;
+    padding-left: 10vh;
+    border-radius: 10vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    flex: 1;
+
+
+}
+
+.navi1 {
+    float: left;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 3vh;
+    font-weight: bold;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    margin-right: 4vh;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(240, 255, 112, .8);
+    border-radius: 3vh;
+    /* width: 1vh;*/
+}
+
+.navi2 {
+    float: right;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 3vh;
+    font-weight: bold;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    margin-right: 4vh;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(240, 255, 112, .8);
+    border-radius: 3vh;
+
+}
+
+.navi2:hover {
+
+
+    border: 2px solid black;
+    color: rgb(0, 0, 0);
+
+    background-image: rgba(240, 255, 112, 1);
+
+}
+
+.nava {
+    flex: 1;
+}
+
+.navi {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.box {
+    padding: 1vh;
+    margin: 1vh;
+    color: rgb(150, 192, 0);
+}
+
+.box1 {
+    display: flex;
+    flex: 1;
+    background-color: rgba(24, 196, 35, 0.24);
+    font-size: 3vh;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1vh;
+    padding: 1vh;
+    text-decoration: none;
+    border-radius: 2vh;
+    font-weight: bolder;
+}
+
+.btnforsub {
+    border-color: rgb(139, 139, 139);
+}
+
+.btnforsubul {
+    display: inline-flex;
+    border-radius: 1vh;
+    border-color: aliceblue;
+}
+
+.btnforsubli {
+    border-radius: 1vh;
+    background-color: rgb(20, 145, 60);
+    color: white;
+    margin: 0vh 2vh;
+    padding: 0vh 2vh;
+    align-items: center;
+    font-size: 3vh;
+
+}
+
+.pdf {
+    flex: 1;
+    font-size: 3vh;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1vh;
+    padding: 1vh;
+    text-decoration: none;
+    border-radius: 2vh;
+}
+
+.se {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    flex: 1;
+    margin: 2vh;
+    padding: 2vh;
+    border-radius: 2vh;
+    border: 2px;
+    border-color: black;
+}
+
+#ppl {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    flex: 1;
+    display: hidden;
+    margin: 2vh;
+    padding: 2vh;
+    border-radius: 2vh;
+    border: 2px;
+    border-color: black;
+    width: 33%;
+}
+
+.subpdful {
+    max-height: 50vh;
+    max-width: 50vh;
+    min-height: 30vh;
+    min-width: 40vh;
+}
+
+
+.subpdfli6 {
+    font-weight: bolder;
+}
+
+.col_1,
+.col_2 {
+    display: flex;
+
+}
+#btnppl , #btnse{
+    margin-left: 25px;
+    font-weight: 700;
+    color: rgb(63, 0, 127);
+    background-color: rgb(147, 207, 28);
+}
+.subject{
+    color: rgb(213, 254, 65);
+    font-weight: 700;
+}
