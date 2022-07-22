@@ -2,18 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: azure;
 }
 body{
     font-family: 'Poppins', sans-serif;
     font-size: 4vh;
-    width: 100%;
 }
 #ripple{
-    height: 70rem; 
-    background: url('sky.jpg') left top / cover;
-
+    background: url('sky.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
 }
 .t{
     align-items: center;
     justify-items: center;
+    width: 100vh; 
+    display: block;
+    margin: 5vh;
 }
