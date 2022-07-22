@@ -5,11 +5,8 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    font-size: 4vh;
     background-color: rgba(0, 0, 0, 0);
-    background-image: url("sky.png");
-    background-repeat: no-repeat;
-    border-radius: 5vh;
-    padding: 8vh;
+    background-image: url("sky.jpg");
     background-size:cover;
+    font-size: 4vh;
 }
