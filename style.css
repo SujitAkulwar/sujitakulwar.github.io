@@ -4,10 +4,11 @@
     box-sizing: border-box;
     color: azure;
     font-weight: 800;
+    font-size: 4vh;
+    
 }
 body{
     font-family: 'Poppins', sans-serif;
-    font-size: 4vh;
 }
 #ripple{
     background: url('sky.jpg');
@@ -29,4 +30,25 @@ body{
     padding:auto;
     margin: auto;
     text-shadow: 10vh black;
+}
+#button1{
+    color: black;
+    border-radius: 25px;
+    align-items: center;
+    width: 10vh; 
+    height: 5vh;
+    padding:auto;
+    margin: auto;
+    margin-left: 95vh;
+    font-size: 2.5vh;
+}
+#button2{
+    color: black;
+    border-radius: 25px;
+    align-items: center;
+    width: 10vh; 
+    height: 5vh;
+    padding:auto;
+    margin: auto;
+    font-size: 2.5vh;
 }
