@@ -2,10 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: azure;
+    color: rgb(0, 174, 255);
     font-weight: 800;
-    font-size: 4vh;
-    
+    font-size: 5vh;
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -16,20 +15,13 @@ body{
     background-repeat: no-repeat;
     height:100vh;
 }
-.welcome{
-    height: 20vh;
-    align-items: center;
-    width: 100vh; 
-    padding:auto;
-    margin: auto;
-}
 .t{
     align-items: center;
     width: 100vh; 
     height: 15vh;
     padding:auto;
     margin: auto;
-    text-shadow: 10vh black;
+    text-shadow: 0.3vh 0.3vh 0.3vh rgb(0, 0, 0);
 }
 #button1{
     color: black;
