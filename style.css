@@ -25,7 +25,7 @@ body{
 }
 #button1{
     color: black;
-    border-radius: 25px;
+    border-radius: 5vh;
     align-items: center;
     width: 10vh; 
     height: 5vh;
@@ -36,7 +36,7 @@ body{
 }
 #button2{
     color: black;
-    border-radius: 25px;
+    border-radius: 5vh;
     align-items: center;
     width: 10vh; 
     height: 5vh;
