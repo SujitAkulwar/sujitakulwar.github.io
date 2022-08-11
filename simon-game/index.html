@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <main>
+        <h1>Press "start" button to start game</h1>
+    </main>
+    <div class="contain">
+        <div class="row">
+            <div class="col red" id="red" onclick="fun(0)"></div>
+            <div class="col yellow" id="yellow" onclick="fun(1)"></div>
+        </div>
+        <div class="row">
+            <div class="col green" id="green" onclick="fun(2)"></div>
+            <div class="col blue" id="blue" onclick="fun(3)"></div>
+        </div>
+    </div>
+    <button id="start" onclick="start()">Start</button>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
+</html>
