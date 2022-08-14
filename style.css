@@ -44,7 +44,7 @@ body{
     margin: auto;
     font-size: 2.5vh;
 }
-#ripple{
+#container{
     display: flex;
     flex-wrap: wrap;
 }
