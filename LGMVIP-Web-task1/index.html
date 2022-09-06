@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <h1 id="h">To do list</h1>
+    <div class="container">
+        <form id="form">
+            <input type="text" placeholder="task" id="new"/>
+            <button id="Addbutton" type="button">
+                <input type="button" value="Add" id="add"/>
+            </button>
+            
+        </form>
+    </div>
+    <h1 id="task">Tasks list</h1>
+    <div class="list" id="list">
+        <nav id="tasks">
+            <input type="checkbox" id="check">
+            <div id="task-name">hi</div>
+            <button id="delete-task" onclick="del(this)">X</button>
+        </nav>
+        <nav id="tasks">
+            <input type="checkbox" id="check">
+            <div id="task-name">hi</div>
+            <button id="delete-task" onclick="del(this)">X</button>
+        </nav>
+    </div>
+    <script src="index.js" defer></script>
+</body>
+</html>
