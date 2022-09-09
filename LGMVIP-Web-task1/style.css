@@ -6,7 +6,7 @@
     font-family: 'Poppins';
     cursor: pointer;
     text-align: center;
-}
+} 
 body{
     max-width: 70vh;
     margin: auto;
@@ -38,18 +38,17 @@ h1{
 }
 #new{
     background-color: rgb(255, 198, 208);
-    height: 5vh;
+    height: 7vh;
     padding: 1%;
+    width: 60vh;
+    font-size: 3vh;
 }
 #new:hover{
     background-color: rgba(255, 230, 235);
 }
-#new{
-    width: 60vh;
-    font-size: 3vh;
-}
 #add,#name{
     width: 10vh;
+    height: 7vh;
 }
 .list{
     padding: 0;
@@ -70,7 +69,7 @@ h1{
     width: 65vh;
     padding: 1vh;
     background-color: rgb(255, 255, 255,0.8);
-    border: 1px;
+    border: 1px solid;
 }
 #delete-task{
     width: 5vh;
@@ -83,11 +82,11 @@ h1{
     margin: 0;
     padding: 0;
     width: 10vh;
-    height: 5vh;
+    height: 7vh;
 }
 #Addbutton input{
     background: url(ok.png) no-repeat;
-    height: 5vh;
+    height: 7vh;
     width: 5vh;
     border: none;
 }

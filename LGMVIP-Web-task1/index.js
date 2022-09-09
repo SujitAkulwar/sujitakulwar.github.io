@@ -22,3 +22,4 @@ function add(){
 function del(x){
     x.parentNode.style.display='none';
 }
+ 

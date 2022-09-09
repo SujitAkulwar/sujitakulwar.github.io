@@ -28,6 +28,7 @@ body{
     display: flex;
     max-width: 40vh;
     margin: auto;
+    
 }
 button{
     color: black;
@@ -48,4 +49,16 @@ a{
 }
 a:hover{
     font-size: 6vh;
+}
+h1{
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    font-size: 8vh;
+}
+section{
+    margin: 0;
+    padding: 0;
 }
