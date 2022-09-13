@@ -1,0 +1,70 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+    cursor: pointer;
+    text-align: center;
+    font-size: 3vh;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right,rgb(130, 220, 255),rgb(100, 200, 255),rgb(70, 180, 255),rgb(60, 160, 255));
+}
+header{
+    height: 10vh;
+    width: 100%;
+    font-size: 6vh;
+    padding-top: 3vh;
+    text-align: center;
+    font-weight: 900;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 5vh;
+}
+.left{
+    width: 50%;
+    border-right: 5px solid;
+}
+.right{
+    margin: auto;
+    margin-top: 0vh;
+    width: 40%;
+}
+.t2{
+    font-size: 4vh;
+}
+ul{
+    list-style: none;
+    display: flex;
+    margin-top: 5vh;
+}
+li{
+    border: 1px solid;
+    padding: 1vh;
+    background-color: rgb(124, 209, 255);
+    word-wrap: break-word;
+}
+p{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2vh;
+    text-align: start;
+    width: 40vh;
+}
+img{
+    height: 15vh;
+    width: 15vh;
+    float: right;
+}
+input{
+    text-align: left;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    background: linear-gradient(to left,rgba(0, 200, 255, 0.8),rgba(220, 255, 255, 0.5),rgba(0, 200, 255, 0.8));
+}

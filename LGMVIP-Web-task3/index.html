@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+  <header>
+    Student Enrollment Form
+  </header>
+
+  <div class="main">
+    <div class="left">
+      <h1 class="t2">Register</h1>
+      <br>
+      <form>  
+      Name :  <input id="name" type="text" name="name" placeholder="Student Name" value=""><br><br>
+      E-mail :  <input id="email" type="text" name="email" placeholder="Student Email id" value=""><br><br>
+      Website :  <input id="website" type="text" name="website" placeholder="Website" value=""><br><br>
+      Gender :  <input id="gender" type="radio" name="gender" value="female" onclick="setgender('female')"> Female <input id="gender" type="radio" name="gender" value="male"  onclick="setgender('male')"> Male <br><br>
+      Skill :  <input id="skill" type="checkbox" name="skill" value="c++" onclick="setcpp()"> C++ <input id="skill" type="checkbox" name="skill" value="java" onclick="setjava()"> Java <input id="skill" type="checkbox" name="skill" value="python"  onclick="setpython()"> Python <br><br>
+      photo :  <input id="imglink" type="link" name="image link" placeholder="image link" accept=".jpg, .jpeg, .png" required="" capture><br><br>
+      <input type="button" name="submit" value="Enroll Student" onclick='formValidation()'>
+      </form>
+
+  </div>
+
+  <div class="right" id="right">
+    <h1 class="t2">Student entry</h1>
+    <ul>
+      <li>
+        <p>Name : luke dunfy</p>
+        <p>Email : lukerocks653487@hotmail.com</p>
+        <p>website : coolboyluke.com</p>
+        <p>Gender : male</p>
+        <p>skill : c++, python</p>
+      </li>
+      <li>
+        <img src="https://img.icons8.com/dotty/344/administrator-male.png" alt="">
+      </li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
