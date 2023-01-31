@@ -2,65 +2,180 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: rgb(0, 174, 255);
-    font-weight: 800;
-    font-size: 5vh;
-    text-align: center;
-    word-wrap: break-all;
+    color: rgb(203, 213, 246);
+    background-color: #0a192f;
+    cursor:pointer;
+    background-blend-mode:color-burn;
+    position: relative;
+    transition: 0.5s;
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background: url('sky.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
     height:100vh;
 }
-h1{
-    text-shadow: 0.3vh 0.3vh 0.3vh rgb(0, 0, 0);
-}
-.t{
-    align-items: center;
-    width: 100vh; 
-    height: 15vh;
-    padding:auto;
-    margin: auto;
-    text-shadow: 0.3vh 0.3vh 0.3vh rgb(0, 0, 0);
-}
-.btn{
+header{
+    height:130px;
     display: flex;
-    max-width: 40vh;
-    margin: auto;
-    
+    justify-content: space-between;
+    padding: 2vw 4vw;
 }
-button{
-    color: black;
-    border-radius: 5vh;
-    justify-content: center;
-    width: 12vh; 
-    height: 5vh;
-    margin: auto;
-    font-size: 2.5vh;
-    border: 1px solid;
-}
-#container{
-    display: flex;
-    flex-wrap: wrap;
-}
-a{
-    transition: 0.5s;
-}
-a:hover{
-    font-size: 6vh;
-}
-h1{
-    margin: auto;
-    padding: auto;
-    text-align: center;
-    padding-top: 10vh;
-    padding-bottom: 5vh;
-    font-size: 8vh;
+#imglogo{
+    height : 60px;
+    width : 60px;
 }
 section{
-    margin: 0;
+    height: auto;
+    width: 80%;
+    margin : 0 10%;
+    padding: 10vh 10vh 30vh 10vh;
+}
+section h1{
+    letter-spacing: 4px;
+    font-size:70px;
+    font-weight: 800;
+}
+ul{
+    display:flex;
+    text-align:center;
+    line-height:60px;
+    font-weight:500;
+    align-self: start;
+}
+li:hover{
+    color: rgb(255, 255, 255);
+    transform:translateY(-2px);
+    transition: 1s;
+    text-decoration: underline;
+    font-weight: 700;
+    
+}
+li{
+    list-style-type: none;
+    padding : 0 1vw;
+    font-size:20px;
+}
+h4{
+    padding-left: 0.6vw;
+    color:rgb(90,236,204);
+    font-weight: 300;
+    font-size: 20px;
+}
+.img a{
+    transform: translateY(0);
     padding: 0;
+    box-shadow: 5px 5px rgb(0, 187, 255),-5px -5px rgb(0, 187, 255),5px -5px rgb(0, 187, 255),-5px 5px rgb(0, 187, 255);
+}
+.img a:hover{
+    box-shadow: 5px 5px white,-5px -5px white,5px -5px white,-5px 5px white;
+}
+.resume{
+    border: #6291d7 3px dotted;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.resume:hover{
+    font-weight: 800;
+    color: white;
+}
+h2{
+    font-size: 15px;
+    padding: 0.5vw 0;
+    margin:3vh 0; 
+    border: #6291d7 3px dotted;
+    border-radius: 10px;
+    max-width: 250px;
+    line-height: 35px;
+}
+#github{
+    height: 25px;
+    width: 25px;
+}
+a{
+    display: flex;
+    text-decoration: none;
+}
+a li {
+    font-size: 15px;
+    color: white;    
+    border-radius: 15px;
+}
+h2 a li:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(255, 255, 255);
+    transition-duration: 0.6s;
+    transform: translateY(0);
+    padding-left: 20px;
+}
+h3{
+    color: rgb(133, 159, 254);
+    max-width: 600px;
+}
+@media screen and (min-width: 480px) {
+    h4{
+        padding: 1vh 0 0 0;
+    }h1{
+        padding:  1vw 0 2vw 0;
+    }h3{
+        padding: 2vw 0 0 0;
+    }h2{
+        padding: 1vw 0.5vw;
+        max-width: 350px;
+    }
+    #github {
+        height: 40px;
+        width: 40px;
+    }
+    h2 a li{
+        font-size: 20px;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    header{
+        padding: 10px;
+    }
+    li{
+        padding : 0 5px;
+        font-size:15px;
+    }
+    .resume{
+        border: #6291d7 1px dotted;
+        font-size: 15px;
+        padding: 0 3px;
+        margin-top: 15px;
+        line-height: 30px;
+    }
+    section{
+        width: auto;
+        margin : 0;
+        padding: 10vw;
+        height:85vh;
+    }
+    section h1{
+        font-size: 50px;
+    }
+    .img a{ 
+        border:2px 2px rgb(0, 187, 255),-2px -2px rgb(0, 187, 255),2px -2px rgb(0, 187, 255),-2px 2px rgb(0, 187, 255) ;
+    }
+    #github{
+        margin:10px;
+    }
+    h4{
+        padding-top: 10vh;
+    }
+    h1{
+        padding: 2vh 0 2vh 0;
+    }
+    h3{
+        padding: 5vh 0 2vh 0;
+    }
+    h2{
+        margin-bottom:10vh;
+    }
+    h2 a li {
+        align-self: center;
+    }
 }
