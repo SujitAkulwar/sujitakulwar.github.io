@@ -4,9 +4,386 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body class="flex">
+    <div class="w-3/6  min-h-screen px-10 py-5 border">
+        <form>
+            <div class="head p-4 font-bold tracking-wide text-3xl">
+                CSS flex-box Visualizer
+            </div>
+
+
+            <div class="bo0 border">
+                <!-- Body properties -->
+                <div class="flex  hover:cursor-pointer bg-slate-800" onclick="hide(0)">
+                    <div id="l0" class="h-7">
+                        <img class="h-7 bg-transparent" src="../2.png" alt="" id="i0">
+                    </div>
+                    <div class="t00 h-7 px-2 bg-slate-800">
+                        Body
+                    </div>
+                </div>
+
+                <div class="bodyhide" id="bodyhide">
+                    <!-- body display  -->
+                    <div class="flex"  id="flx">
+                        <div class="d0 px-2" for="p00">
+                            Display : 
+                        </div>
+                        <select class=" border px-2" name="p00" id="p00">
+                            <option id="o" value="0">Select Value</option>
+                            <option id="o" value="1">Flex</option>
+                        </select>
+                    </div>
+
+
+
+                    <!-- Body flex directions  -->
+                    <div class="flex"  id="flx">
+                        <div class="f0 px-2" for="p01">
+                            Flex Direction : 
+                        </div>
+                        <select class=" border  px-2" name="p01" id="p01">
+                            <option id="o" value="0">Select Value</option>
+                            <option id="o" value="1">row</option>
+                            <option id="o" value="2">row-reverse</option>
+                            <option id="o" value="3">column</option>
+                            <option id="o" value="4">column-reverse</option>
+                        </select>
+                    </div>
+
+                    <!-- body justify content -->
+                    <div class="flex"  id="flx">
+                        <div class="jc0 px-2" for="p02">
+                            Justify-Content : 
+                        </div>
+                        <select class=" border  px-2" name="p02" id="p02">
+                            <option id="o" value="0">Select Value</option>
+                            <option id="o" value="1">flex-start</option>
+                            <option id="o" value="2">flex-end</option>
+                            <option id="o" value="3">center</option>
+                            <option id="o" value="4">space-betweeen</option>
+                            <option id="o" value="5">space-around</option>
+                            <option id="o" value="6">space-evenly</option>
+                        </select>
+                    </div>
+
+                     <!-- body flex-wrap  -->
+                    <div class="flex"  id="flx">
+                        <div class="flexwrap  px-2" for="p03">
+                            Flex wrap : 
+                        </div>
+                        <select class=" border  px-2" name="p03" id="p03">
+                            <option id="o" value="0">Select Value</option>
+                            <option id="o" value="1">wrap</option>
+                            <option id="o" value="2">nowrap</option>
+                            <option id="o" value="3">wrap-reverser</option>
+                        </select>
+                    </div>
+
+                     <!-- body align-item  -->
+                     <div class="flex"  id="flx">
+                        <div class="alignitem px-2" for="p04">
+                            align-item : 
+                        </div>
+                        <select class=" border  px-2 " name="p04" id="p04">
+                            <option id="o" value="0">Select Value</option>
+                            <option id="o" value="1">start</option>
+                            <option id="o" value="2">end</option>
+                            <option id="o" value="3">center</option>
+                            <option id="o" value="4">baseline</option>
+                            <option id="o" value="5">stretch</option>
+                        </select>
+                    </div>
+
+                     <!-- body align-content  -->
+                     <div class="flex"  id="flx">
+                        <div class="aligncontent px-2" for="p05">
+                            align-content : 
+                        </div>
+                        <select class=" border  px-2" name="p05" id="p05">
+                            <option id="o" value="0">Select Value</option>
+                            <option id="o" value="1">center</option>
+                            <option id="o" value="2">start</option>
+                            <option id="o" value="3">end</option>
+                            <option id="o" value="4">space-between</option>
+                            <option id="o" value="5">space-around</option>
+                            <option id="o" value="6">evenly</option>
+                            <option id="o" value="7">baseline</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bo1 border">
+                <div class="flex cursor-pointer bg-slate-800" onclick="hide(1)">
+                    <div id="l1" class="h-7">
+                        <img class="h-7 bg-transparent" id="i1" src="../2.png" alt="">
+                    </div>
+                    <div class="t00 px-2 bg-slate-800">
+                        block 1
+                    </div>
+                </div>
+                <div class="block1hide" id="block1hide">
+                    <div class="flex">
+                        <div id="order" for="o1" class=" px-2">
+                            Order : 
+                        </div>
+                        <select class=" px-2  border" name="o1" id="o1">
+                            <option id="o" value="0">Select Value</option>
+                            <option id="o" value="1">1</option>
+                            <option id="o" value="2">2</option>
+                            <option id="o" value="3">3</option>
+                            <option id="o" value="4">4</option>
+                            <option id="o" value="5">first</option>
+                            <option id="o" value="6">last</option>
+                        </select>
+                    </div>
+                    <div class="flex">
+                        <div id="flexgrow" for="fg1" class=" px-2">
+                            flex-grow : 
+                        </div>
+                        <select name="fg1" id="fg1" class=" border px-2">
+                            <option id="o" value="0">Select Value</option>
+                            <option id="o" value="1">0</option>
+                            <option id="o" value="2">1</option>
+                        </select>
+                    </div>
+                    <div class="flex">
+                        <div id="flexshrink" for="fs1" class=" px-2">
+                            flex-Shrink : 
+                        </div>
+                        <select class=" border px-2" name="fs1" id="fs1">
+                            <option id="o" value="0">Select Value</option>
+                            <option id="o" value="1">0</option>
+                            <option id="o" value="2">1</option>
+                        </select>
+                    </div>
+                    <div class="flex">
+                        <div id="alignself" for="as1" class=" px-2">
+                            align-self : 
+                        </div>
+                        <select name="as1" id="as1" class=" border px-2">
+                            <option id="o" value="0">Select Value</option>
+                            <option id="o" value="1">auto</option>
+                            <option id="o" value="2">start</option>
+                            <option id="o" value="3">end</option>
+                            <option id="o" value="4">center</option>
+                            <option id="o" value="5">stretch</option>
+                            <option id="o" value="6">baseline</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bo2 border">
+                <div class="flex cursor-pointer bg-slate-800" onclick="hide(2)">
+                    <div id="l2">
+                        <img class="h-7 bg-transparent"  id="i2" src="../2.png" alt="">
+                    </div>
+                    <div class="t00  px-2 bg-slate-800">
+                        block 2
+                    </div>
+                </div>
+                <div class="block2hide" id="block2hide">
+                    <div class="flex">
+                        <div id="order" class=" px-2" for="o2">
+                            Order : 
+                        </div>
+                        <select name="o2" id="o2" class=" border px-2">
+                            <option id="o" value="0">Select Value</option>
+                            <option id="o" value="1">1</option>
+                            <option id="o" value="2">2</option>
+                            <option id="o" value="3">3</option>
+                            <option id="o" value="4">4</option>
+                            <option id="o" value="5">first</option>
+                            <option id="o" value="6">last</option>
+                        </select>
+                    </div>
+                    <div class="flex">
+                        <div id="flexgrow" for="fg2" class=" px-2">
+                            flex-grow : 
+                        </div>
+                        <select name="fg2" id="fg2" class=" border px-2">
+                            <option id="o" value="0">Select Value</option>
+                            <option id="o" value="1">0</option>
+                            <option id="o" value="2">1</option>
+                        </select>
+                    </div>
+                    <div class="flex" >
+                        <div id="flexshrink" for="fs2" class="  px-2">
+                            flex-Shrink : 
+                        </div>
+                        <select name="fs2" id="fs2" class="border px-2">
+                            <option id="o" value="0">Select Value</option>
+                            <option id="o" value="1">0</option>
+                            <option id="o" value="2">1</option>
+                        </select>
+                    </div>
+                    <div class="flex sel" >
+                        <div id="alignself" for="as2" class=" px-2">
+                            align-self : 
+                        </div>
+                        <select name="as2" id="as2" class="  px-2 border">
+                            <option id="o" value="0">Select Value</option>
+                            <option id="o" value="1">auto</option>
+                            <option id="o" value="2">start</option>
+                            <option id="o" value="3">end</option>
+                            <option id="o" value="4">center</option>
+                            <option id="o" value="5">stretch</option>
+                            <option id="o" value="6">baseline</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bo3 border">
+                <div class="flex cursor-pointer bg-slate-800" onclick="hide(3)">
+                    <div id="l3">
+                        <img class="h-7  bg-transparent" id="i3"  src="../2.png" alt="">
+                    </div>
+                    <div class="t00  px-2 bg-slate-800">
+                        block 3
+                    </div>
+                </div>
+                <div class="block1hide" id="block3hide">
+                    <div class="flex">
+                        <div id="order" for="o3" class=" px-2">
+                            Order : 
+                        </div>
+                        <select name="o3" id="o3" class=" px-2 border">
+                            <option id="o" value="0">Select Value</option>
+                            <option id="o" value="1">1</option>
+                            <option id="o" value="2">2</option>
+                            <option id="o" value="3">3</option>
+                            <option id="o" value="4">4</option>
+                            <option id="o" value="5">first</option>
+                            <option id="o" value="6">last</option>
+                        </select>
+                    </div>
+                    <div class="flex">
+                        <div id="flexgrow" for="fg3" class=" px-2">
+                            flex-grow : 
+                        </div>
+                        <select name="fg3" id="fg3" class=" px-2 border">
+                            <option id="o" value="0">Select Value</option>
+                            <option id="o" value="1">0</option>
+                            <option id="o" value="2">1</option>
+                        </select>
+                    </div>
+                    <div class="flex">
+                        <div id="flexshrink" for="fs3" class=" px-2">
+                            flex-Shrink : 
+                        </div>
+                        <select name="fs3" id="fs3" class=" px-2 border">
+                            <option id="o" value="0">Select Value</option>
+                            <option id="o" value="1">0</option>
+                            <option id="o" value="2">1</option>
+                        </select>
+                    </div>
+                    <div class="flex">
+                        <div id="alignself" for="as3" class=" px-2">
+                            align-self : 
+                        </div>
+                        <select name="as3" id="as3" class=" px-2 border">
+                            <option id="o" value="0">Select Value</option>
+                            <option id="o" value="1">auto</option>
+                            <option id="o" value="2">start</option>
+                            <option id="o" value="3">end</option>
+                            <option id="o" value="4">center</option>
+                            <option id="o" value="5">stretch</option>
+                            <option id="o" value="6">baseline</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bo4 border">
+                <div class="flex cursor-pointer bg-slate-800" onclick="hide(4)">
+                    <div id="l4">
+                        <img class="h-7 bg-transparent" id="i4"  src="../2.png" alt="">
+                    </div>
+                    <div class="t00 px-2 bg-slate-800">
+                        block 4
+                    </div>
+                </div>
+                <div class="block1hide" id="block4hide">
+                    <div class="flex">
+                        <div id="order" for="o4" class=" px-2">
+                            Order : 
+                        </div>
+                        <select name="o4" id="o4" class=" px-2 border">
+                            <option id="o" value="0">Select Value</option>
+                            <option id="o" value="1">1</option>
+                            <option id="o" value="2">2</option>
+                            <option id="o" value="3">3</option>
+                            <option id="o" value="4">4</option>
+                            <option id="o" value="5">first</option>
+                            <option id="o" value="6">last</option>
+                        </select>
+                    </div>
+                    <div class="flex">
+                        <div id="flexgrow" for="fg4" class=" px-2">
+                            flex-grow : 
+                        </div>
+                        <select name="fg4" id="fg4"  class=" px-2 border">
+                            <option id="o" value="0">Select Value</option>
+                            <option id="o" value="1">0</option>
+                            <option id="o" value="2">1</option>
+                        </select>
+                    </div>
+                    <div class="flex">
+                        <div id="flexshrink" for="fs4" class=" px-2">
+                            flex-Shrink : 
+                        </div>
+                        <select name="fs4" id="fs4"  class=" px-2 border">
+                            <option id="o" value="0">Select Value</option>
+                            <option id="o" value="1">0</option>
+                            <option id="o" value="2">1</option>
+                        </select>
+                    </div>
+                    <div class="flex">
+                        <div id="alignself" for="as4" class=" px-2">
+                            align-self : 
+                        </div>
+                        <select name="as4" id="as4" class=" px-2 border">
+                            <option id="o" value="0">Select Value</option>
+                            <option id="o" value="1">auto</option>
+                            <option id="o" value="2">start</option>
+                            <option id="o" value="3">end</option>
+                            <option id="o" value="4">center</option>
+                            <option id="o" value="5">stretch</option>
+                            <option id="o" value="6">baseline</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="submit cursor-pointer  px-2 h-8 w-12 border-2 border-blue-700 text-center justify-center m-2" id="submit">RUN</div>
+        </form>
+    </div>
     
+    
+
+    <div class="w-3/6 p-1 border min-h-screen" id="right">
+        <div class="block1 border text-center font-bold tracking-wide p-1" id="b1">
+            block 1
+        </div>
+        <div class="block2 border text-center font-bold tracking-wide p-1" id="b2">
+            block 2
+        </div>
+        <div class="block3 border text-center font-bold tracking-wide p-1 " id="b3">
+            block 3
+        </div>
+        <div class="block4 border text-center font-bold tracking-wide p-1 " id="b4">
+            block 4
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
