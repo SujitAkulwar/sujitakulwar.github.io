@@ -179,6 +179,84 @@ p{
     font-size: 18px;
 }
 
+.ptitle{
+    font-size: 3vw;
+    font-weight: 600;
+    padding: 2vw 13vw;
+
+}
+.pro{
+    padding: 0 10vw;
+}
+.projects{
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+.p{
+    margin:  5vw 2vw;
+    width: 304px;
+    height: auto;
+    border: 2px solid white;
+}
+.p:hover{
+    border: 2px solid rgb(0, 255, 157);
+    scale: 1.2;
+}
+.p img{
+    width: 300px;
+    height: auto;
+    border-bottom:2px solid white ;
+}
+.title{
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1300px) {
+    .projects{
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr;  
+        grid-template-areas: 
+        ". . ."
+        ". . ."
+        ". . ."; 
+        gap: 2vw 2vw;
+    }
+    .p{
+        padding: 0;
+        margin: 0;
+    }
+
+    
+}
+@media screen and (min-width: 800px) and (max-width: 1300px){
+    .projects{
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr;  
+        grid-template-areas: 
+        ". ."
+        ". ."
+        ". ."; 
+        gap:1vw;
+    }
+    .p{
+        padding: 0;
+        margin: 0;
+    }
+}
+
 @media screen and (min-width: 700px) {
     h4{
         padding: 1vh 0 0 0;
@@ -204,9 +282,8 @@ p{
         align-items: center;
         padding:10vw 15vw;
     }
-    
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     header{
         padding: 10px;
     }
