@@ -7,9 +7,100 @@
     cursor:pointer;
     background-blend-mode:color-burn;
     position: relative;
-    transition: 0.5s;
+    transition: 0.3s;
 }
-
+::-webkit-scrollbar{
+    width: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif; 
+    height:100vh;
+}
+header{
+    height:130px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 4vw;
+}
+#imglogo{
+    height : 60px;
+    width : 60px;
+    border: 2px solid violet;
+}
+section{
+    height: auto;
+    width: 80%;
+    margin : 0 10%;
+    padding: 5vw 5vw 10vw 5vw;
+}
+section h1{
+    letter-spacing: 4px;
+    font-size:70px;
+    font-weight: 800;
+}
+ul{
+    display:flex;
+    text-align:center;
+    line-height:60px;
+    font-weight:500;
+    align-self: start;
+}
+li:hover{
+    color: rgb(255, 255, 255);
+    transform:translateY(-2px);
+    transition: 1s;
+    text-decoration: underline;
+    font-weight: 700;
+    
+}
+li{
+    list-style-type: none;
+    padding : 0 1vw;
+    font-size:20px;
+}
+h4{
+    padding-left: 0.6vw;
+    color:rgb(90,236,204);
+    font-weight: 300;
+    font-size: 20px;
+}
+.img a{
+    transform: translateY(0);
+    padding: 0;
+    box-shadow: 5px rgb(0, 187, 255);
+}
+.img a:hover{
+    box-shadow: 5px white;
+}
+.resume{
+    border: #6291d7 3px dotted;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.resume:hover{
+    font-weight: 800;
+    color: white;
+}
+h2{
+    font-size: 15px;
+    padding: 0.5vw 0;
+    margin:3vh 0; 
+    border: #6291d7 3px dotted;
+    border-radius: 10px;
+    max-width: 250px;
+    line-height: 35px;
+}
+#github{
+    height: 25px;
+    width: 25px;
+}
+a{
+    display: flex;
+    text-decoration: none;
+}
 a li {
     font-size: 15px;
     color: white;    
@@ -26,7 +117,69 @@ h3{
     color: rgb(133, 159, 254);
     max-width: 600px;
 }
-@media screen and (min-width: 480px) {
+.about{
+    margin: 1vw;
+}
+.l{
+    width: 50%;
+    padding: 2vw;
+}
+.l h3{
+    padding:2vw 0;
+    font-size: 25px;
+}
+.r{
+    width: 50%;
+
+}
+.sujitimg{
+    display: flex;
+    align-self: flex-start;
+    margin: 0 0 0 2vw; 
+    border:  0.5vw solid rgb(59, 219, 255);
+    padding: 0;
+    width: 21vw;
+    background-color: rgb(59, 219, 255);
+    transition-duration: 1s;
+    border-radius: 5px;
+}
+.sujitimg img{
+    height: 20vw;
+    width: 20vw;
+}
+.sujitimg:hover{
+    scale:1.1;
+    background-color: rgb(100, 255, 255);
+    border:  0.5vw solid rgb(100, 255, 255);
+}
+.sujitimg img:hover{
+    transform: translateY(-20px);
+
+}
+.skill {
+    grid-column:auto;
+    grid-row: auto;
+    justify-content: center;
+    width: auto;
+    padding: 2vw;
+}
+.skill img{
+    height: 4vh;
+    width: auto;
+    margin: 0.5vw;
+}
+.skill img:hover{
+    scale: 1.4;
+    transform: translateY(-5px);
+    transition-duration: 0.2s;
+    transition-delay:0;
+}
+p{
+    padding:  1vw 0;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 700px) {
     h4{
         padding: 1vh 0 0 0;
     }h1{
@@ -44,9 +197,16 @@ h3{
     h2 a li{
         font-size: 20px;
     }
+    .about{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:10vw 15vw;
+    }
     
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 700px) {
     header{
         padding: 10px;
     }
@@ -71,7 +231,7 @@ h3{
         font-size: 50px;
     }
     .img a{ 
-        border:2px 2px rgb(0, 187, 255),-2px -2px rgb(0, 187, 255),2px -2px rgb(0, 187, 255),-2px 2px rgb(0, 187, 255) ;
+        border:2px rgb(0, 187, 255) ;
     }
     #github{
         margin:10px;
@@ -90,5 +250,69 @@ h3{
     }
     h2 a li {
         align-self: center;
+    }
+        
+    .about{
+        padding: 3vh;
+    }
+    .l{
+        width: auto;
+        padding: 1vh;
+    }
+    .l h3{
+        padding:2vw 0;
+        font-size: 25px;
+    }
+    .r{
+        width: 50%;
+
+    }
+    .sujitimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border:  10vw solid rgb(0, 10, 15);
+        padding: 0;
+        margin-left: 15vw;
+        width: 50vw;
+        height: 30vw;
+        background-color: rgb(0, 10, 15);
+        transition-duration: 1s;
+        margin-top: 30vw;
+    }
+    .sujitimg img{
+        height: 40vw;
+        width: 40vw;
+        transform: translateY(-10vw);
+    }
+    .sujitimg:hover{
+        scale:1;
+        background-color: rgb(100, 255, 255);
+        border:  0.5vw solid rgb(100, 255, 255);
+    }
+    .sujitimg img:hover{
+        transform: translateY(0);
+    }
+    .skill {
+        grid-column:auto;
+        grid-row: auto;
+        justify-content: center;
+        width: auto;
+        padding: 2vw;
+    }
+    .skill img{
+        height: 4vh;
+        width: auto;
+        margin: 0.5vw;
+    }
+    .skill img:hover{
+        scale: 1.4;
+        transform: translateY(-5px);
+        transition-duration: 0.2s;
+        transition-delay:0;
+    }
+    p{
+        padding:  1vw 0;
+        font-size: 18px;
     }
 }
