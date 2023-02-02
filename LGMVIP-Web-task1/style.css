@@ -8,47 +8,50 @@
     text-align: center;
 } 
 body{
-    max-width: 70vh;
     margin: auto;
     height: 100%;
     width: 100%;
     background: linear-gradient(to right,rgb(31, 192, 255),rgb(255, 153, 170));
 }
 h1{
-    width: 60vh;
+    width: auto;
     height: 100%;
     margin-top: 5%;
     color: black;
     text-shadow: 1px 1px rgb(255, 255, 255);
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
 }
 .container{
-    width: 60vh;
-    height: 100%;
+    width: auto;
+    height: auto;
     margin-top: 1%;
 }
 #form{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 70vh;
+    width: auto;
     border-radius: 50px;
     border: 2px;
     margin: auto;
     padding: auto;
+    justify-content: center;
 }
 #new{
     background-color: rgb(255, 198, 208);
-    height: 7vh;
-    padding: 1%;
-    width: 60vh;
+    height: auto;
+    padding: 5px;
+    width: 200px;
     font-size: 3vh;
 }
 #new:hover{
     background-color: rgba(255, 230, 235);
 }
 #add,#name{
-    width: 10vh;
-    height: 7vh;
+    width: 20px;
+    height: 20px;
 }
 .list{
     padding: 0;
@@ -57,22 +60,23 @@ h1{
 #tasks,nav{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     word-wrap: break-word;
-    line-break: auto;
-    width: 70vh;
-    height: 5vh;
-    font-size: 3vh;
-    margin-top: 14px;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    margin-top: 10px;
+    justify-content: center;
+    padding:  0 20px;
 }
 #task-name{
-    width: 65vh;
+    width: auto;
     padding: 1vh;
     background-color: rgb(255, 255, 255,0.8);
     border: 1px solid;
 }
 #delete-task{
-    width: 5vh;
+    width: 50px;
+    height: 50px;
     background-color: rgb(255, 255, 255,0.8);
 }
 #delete-task:hover,#task-name:hover{
@@ -90,18 +94,16 @@ h1{
     width: 5vh;
     border: none;
 }
-#h{
-    font-size: 3rem;
-}
+
 #task{
-    margin-top: 5vh;
+    margin-top: 2vh;
 }
 #task-name{
-    width: 58vh;
+    width: 200px;
 }
 #check{
-    height: 7vh;
-    width: 7vh;
+    height:50px;
+    width: 50px;
     margin: 0;
     padding: 0;
 }

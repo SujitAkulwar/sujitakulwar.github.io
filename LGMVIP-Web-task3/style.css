@@ -15,34 +15,33 @@ body{
 header{
     height: 10vh;
     width: 100%;
-    font-size: 6vh;
+    font-size: 3vh;
     padding-top: 3vh;
     text-align: center;
     font-weight: 900;
 }
 .main{
-    display: flex;
     flex-wrap: wrap;
-    max-width: 90%;
+    width: auto;
     margin: auto;
     margin-top: 5vh;
 }
 .left{
-    width: 50%;
-    border-right: 5px solid;
+    width: auto;
+    padding: 1vw;
 }
 .right{
     margin: auto;
     margin-top: 0vh;
-    width: 40%;
+    width: auto;
+    padding-top: 40px;
 }
 .t2{
     font-size: 4vh;
 }
 ul{
     list-style: none;
-    display: flex;
-    margin-top: 5vh;
+    padding-top: 5vh;
 }
 li{
     border: 1px solid;
@@ -67,4 +66,34 @@ input{
     padding-left: 1vh;
     padding-right: 1vh;
     background: linear-gradient(to left,rgba(0, 200, 255, 0.8),rgba(220, 255, 255, 0.5),rgba(0, 200, 255, 0.8));
+}
+@media screen and (min-width:1000px) {
+    .main{display: flex;}
+    .left{border-right: 5px solid;
+        width: 600px;
+    }
+    ul{
+       display: flex;
+    }
+    header{
+        font-size: 4vh;
+    }
+}
+@media screen and (max-width:1000px){
+    ul{
+        height: auto;
+        width: auto;
+        padding: 20px;
+    }
+    li{
+        width: auto;
+        padding: 10px;
+        height: auto;
+    }
+    li img{
+        width: 100px;
+        height: auto;
+        align-items: center;
+        transform: translateX(-30vw);
+    }
 }

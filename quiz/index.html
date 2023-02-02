@@ -13,9 +13,9 @@
 			<nav>
 				<div class="nav-links">
 					<ul>
-						<li class="nav-link"><a href="#">Leader Board</a></li>
+						<!-- <li class="nav-link"><a href="#">Leader Board</a></li>
 						<li class="nav-link"><a href="#">Create Quiz</a></li>
-						<li class="nav-link"><a href="#">Login</a></li>
+						<li class="nav-link"><a href="#">Login</a></li> -->
 						<li class="nav-link"><a href="#">Register</a></li>
 					</ul>
 				</div>
@@ -23,16 +23,24 @@
 		</header>
 		<main>
 			<div class="main-head">
-				<h1 style="font-size: 10vh">Let's Play</h1>	
+				<h1 style="font-size: 10vh">Trivia</h1>	
 			</div>
 			<div class="difficulty">
-				<h3>Difficulty Level</h3>
-				<input type="radio" name="diff" value="easy" onclick="setDifficulty(this.value)">
-				<label for="easy">Easy</label>
-				<input type="radio" name="diff" value="medium" onclick="setDifficulty(this.value)">
-				<label for="medium">Medium</label>
-				<input type="radio" name="diff" value="hard" onclick="setDifficulty(this.value)">
-				<label for="hard">Hard</label>
+				<h3>Difficulty Level</h3><br>
+				<div class="d">
+					<div class="dd">
+						<input id="input" type="radio" name="diff" value="easy" onclick="setDifficulty(this.value)">
+						<label for="easy">Easy</label><br>
+					</div>
+					<div class="dd">
+						<input id="input" type="radio" name="diff" value="medium" onclick="setDifficulty(this.value)">
+						<label for="medium">Medium</label><br>
+					</div>
+					<div class="dd">
+						<input id="input" type="radio" name="diff" value="hard" onclick="setDifficulty(this.value)">
+						<label for="hard">Hard</label>
+					</div>
+				</div>
 			</div>
 			<div class="no-of-quetions">
 				<h3 id="counter">Number Of Quetions : 5</h3>
@@ -70,9 +78,12 @@
 					<h4>Politics</h4>
 				</button>
 			</div>
-			<button  class="submit" onclick="start_quiz()">
-				Start
-			</button>
+			<div class="s">
+				<button  class="submit" onclick="start_quiz()">
+					Start
+				</button>
+			</div>
+			
 		</main>
 	<script type="text/javascript" src="script.js"></script>
 	</body>

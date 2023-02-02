@@ -6,22 +6,26 @@
 }
 
 #Head{
-    font-size: 8vh;
+    font-size: 6vh;
     text-shadow: 10vh;
     font-weight: 800;
     color: rgb(0, 38, 38);
-    width: 50%;
-    height: 10vh;
-    margin-left: 30%;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: auto;
+    text-align: center;
 }
 #player{
-    font-size: 5vh;
-    text-shadow: 5vh;
+    font-size: 3vh;
     font-weight: 800;
     color: rgb(0, 67, 67);
-    width: 50%;
-    height: 6vh;
-    margin-left: 40%;
+    width: auto;
+    padding: auto;
+    margin: 0;
+    height: auto;
+    text-align: center;
+    padding-bottom: 10vh;
 }
 
 ul{
@@ -29,19 +33,19 @@ ul{
     align-items: center;
     align-content: center;
     font-weight: 800;
-    width: 50%;
-    height: 28vh;
+    width: auto;
+    height: auto;
     border: 2vh;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin: 0;
     border-style: solid;
     border: 2vh;
     border-color: black;
+    justify-content: center;
 }
 
 li{
     padding: auto;
-    margin: auto;
+    margin: 0;
     align-items: center;
     align-content: center;
     display: flex;
@@ -53,10 +57,12 @@ button{
     width: 20vh;
     display: flex;
     align-items: center;
-    padding-left: 4vh;
+    padding: auto;
     border-radius: 25px;
     background: linear-gradient(-45deg, rgba(255, 255, 255, 0), rgb(35, 165, 213));
-    box-shadow: 5px 10px #000000;
+    box-shadow: 1px #000000;
+    text-align: center;
+    justify-content: center;
 }
 html, body {
     width: 100%;
@@ -67,7 +73,26 @@ body {
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
-
+.r{
+    padding-top: 30px;
+    margin: auto;
+    width: 210px;
+}
+.restart{
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #000000 ;
+    transition-duration: .4s;
+    cursor:pointer;
+}
+.restart:hover{
+    background-color: aliceblue;
+}
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -77,5 +102,47 @@ body {
     }
     100% {
         background-position: 0% 50%;
+    }
+}
+@media screen and (max-width :600px) {
+    
+    #Head{
+        font-size: 4vh;
+    }
+    #player{
+        font-size: 3vh;
+        font-weight: 500;
+    }
+    button{
+        font-size: 10vh;
+        text-align: center;
+        justify-content: center;
+        height: 10vh;
+        width: 10vh;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 1px #000000;
+        margin: 0;
+    }
+    html, body {
+        width: auto;
+        height:auto;
+    }
+    body {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 0%;
+        }
+        50% {
+            background-position: 0% 0%;
+        }
+        100% {
+            background-position: 0% 0%;
+        }
     }
 }

@@ -6,7 +6,7 @@
 	text-shadow: 0.4vh 0.4vh 0.4vh  rgb(0, 0, 0);
 }
 body{
-    background-image: url(sky.png);
+    background-color: black;
     color: aliceblue;
 }
 .result{

@@ -3,10 +3,11 @@
 	margin: 0;
 	box-sizing: border-box;
 	text-shadow: 1px 1px 1px rgb(0, 0, 0);
+	position: relative;
 }
 body{
 	font-family: 'poppins',sans-serif;
-	background-image: url("sky.png");
+	background-color: rgb(25,25,25);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -22,7 +23,7 @@ header{
 	position: fixed;
 	top:0;
 	width:100%;
-	background:rgba(0, 200, 255, 0.1);
+	background:rgb(0, 49, 62);
 	font-size: 3vh;
 }
 .nav-links ul{
@@ -57,7 +58,7 @@ main{
 	text-align: center;
 	cursor: pointer;
 	font-size: 3vh;
-	margin: 2vh;
+	padding: 2vh;
 }
 .difficulty h3,.no-of-quetions h3,h2{
 	color: #e66d39;
@@ -96,20 +97,58 @@ h2{
 	color: rgb(255, 237, 38);
 	font-size: 4vh;
 }
+.s{
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
 .submit{
 	background-color: skyblue;
-	border-radius: 2vh;
+	border-radius: 10px;
 	color:black;
-	padding: 2vh 3vh;
+	padding: 10px 20px;
 	text-align: center;
 	text-decoration:none;
 	font-size: 3vh;
-	font-weight: 700;
-	box-shadow:  0.4vh 0.4vh 0.4vh  rgb(0, 0, 0);
+	font-weight: 600;
+	box-shadow:  2px  rgb(0, 0, 0);
 	cursor: pointer;
-	margin-left: 45%;
+	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	margin: 10px 40vw;
 }
 button:focus{
 	background-color: rgb(0, 0, 0);
 	color: skyblue;
 }
+input[type="radio"] {
+	-ms-transform: scale(1.5); 
+	-webkit-transform: scale(1.5); 
+	transform: scale(1.5);
+  }
+  @media screen and (min-width:1000px) {
+	.d{
+		display: flex;
+		text-align: center;
+		width: auto;
+		justify-content: center;
+	}
+	.dd{
+		margin: 10px;
+	}
+  }
+
+  @media screen and (max-width:600px) {
+	input[type="radio"] {
+		-ms-transform: scale(2);
+		-webkit-transform: scale(2);
+		transform: scale(2);
+	  }
+	  .dd{
+		margin:auto;
+		padding: 30px;
+	  }
+  }

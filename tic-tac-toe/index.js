@@ -6,10 +6,10 @@ const winnercheck =[9,8,7,6,5,4,3,21,54];
 
 function turn(){
     if(counter%2 == 0){
-        document.getElementById('player').innerHTML = "player_1's turn";
+        document.getElementById('player').innerHTML = "player 1's turn";
     }
     else{
-        document.getElementById('player').innerHTML = "player_2's turn";
+        document.getElementById('player').innerHTML = "player 2's turn";
     }
 }
 
@@ -17,10 +17,10 @@ function check(){
     for (let i = 0; i < 9; i++) {
         if((winnercheck[0]==winnercheck[1] && winnercheck[1]==winnercheck[2]) || (winnercheck[3]==winnercheck[4] && winnercheck[4]==winnercheck[5]) || (winnercheck[6]==winnercheck[7] && winnercheck[7]==winnercheck[8]) || (winnercheck[0]==winnercheck[3] && winnercheck[3]==winnercheck[6]) || (winnercheck[1]==winnercheck[4] && winnercheck[4]==winnercheck[7]) || (winnercheck[2]==winnercheck[5] && winnercheck[5]==winnercheck[8]) || (winnercheck[0]==winnercheck[4] && winnercheck[4]==winnercheck[8]) || (winnercheck[2]==winnercheck[4] && winnercheck[4]==winnercheck[6])){
             if(counter%2 == 1){
-                document.getElementById('player').innerHTML = "player_1 is winner";
+                document.getElementById('player').innerHTML = "player 1 is winner";
             }
             else{
-                document.getElementById('player').innerHTML = "player_2 is winner";
+                document.getElementById('player').innerHTML = "player 2 is winner";
             }
             for(let j = 0 ; j < 9 ; j++){
                 question[i]=2;
