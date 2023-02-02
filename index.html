@@ -14,19 +14,19 @@
 <body>
     <header>
         <ul>
-            <li class="img">
+            <li class="img" id="img">
                 <a href="http://sujitakulwar.github.io/"><img id="imglogo" src="1.png" alt=""></a>
             </li>
         </ul>
         <ul>
             <li>
-                Home
+                <div onclick="home()">Home</div> 
             </li>
             <li>
-                About me
+                <div onclick="about()">About me</div> 
             </li>
             <li>
-                Projects
+                <div onclick="pro()">Projects</div> 
             </li>
             <li >
                 <a class="resume" href="">
@@ -53,7 +53,7 @@
         </h2>
     </section>
 
-    <div class="about">
+    <div class="about" id="about">
         <div class="l">
             <h3>
                 About me
@@ -93,10 +93,10 @@
     </div>
 
 
-    <div class="ptitle">
+    <div class="ptitle" id="ptitle">
         Projects
     </div>
-    <div class="pro">
+    <div class="pro" id="pro">
         <div class="projects">
 
             <div class="p">
@@ -110,7 +110,8 @@
                         </div>
                     </a>
                     <div class="dis">
-
+                        a playground for beginner’s where they can use multiple flex-box properties.
+                        created using HTML5, CSS3, Javascript, tailwind.
                     </div>
                 </div>
             </div>
@@ -125,7 +126,8 @@
                         </div>
                     </a>
                     <div class="dis">
-
+                        a LAPTOP shopping website.
+                        created using ReactJS(HTML5, CSS3, Javascript).
                     </div>
                 </div>
             </div>
@@ -139,9 +141,10 @@
                             Trivia game
                         </div>
                     </a>
-                    
                     <div class="dis">
-
+                        a Trivia / quiz website using Api for multiple choice question.
+                        It contains different level of question with different catagories.
+                        created using HTML5, CSS3, Javascript, API.
                     </div>
                 </div>
             </div>
@@ -156,7 +159,8 @@
                         </div>
                     </a>
                     <div class="dis">
-
+                        a simple website for form filling and adding imformation.
+                        created using HTML5, CSS3, Javascript, API.
                     </div>
                 </div>
             </div>
@@ -171,7 +175,8 @@
                         </div>
                     </a>
                     <div class="dis">
-
+                        a To Do List website.
+                        created using HTML5, CSS3, Javascript.
                     </div>
                 </div>
             </div>
@@ -186,7 +191,8 @@
                         </div>
                     </a>
                     <div class="dis">
-
+                        a tic-tac-toe game website.
+                        created using HTML5, CSS3, Javascript.
                     </div>
                 </div>
             </div>
@@ -201,7 +207,8 @@
                         </div>
                     </a>
                     <div class="dis">
-
+                        a simon game website.
+                        created using HTML5, CSS3, Javascript.
                     </div>
                 </div>
             </div>
@@ -209,6 +216,9 @@
         </div>
     </div>
 
+    <footer style="display: flex;justify-content: center;align-items: center;">
+        <p style="padding-left: 1vw;">contact me : sujitakulwar@gmail.com</p> 
+    </footer>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
       
       <script src='https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples.min.js'></script>

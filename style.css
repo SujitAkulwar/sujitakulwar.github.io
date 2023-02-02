@@ -31,7 +31,7 @@ section{
     height: auto;
     width: 80%;
     margin : 0 10%;
-    padding: 5vw 5vw 10vw 5vw;
+    padding: 5vw;
 }
 section h1{
     letter-spacing: 4px;
@@ -121,7 +121,7 @@ h3{
     margin: 1vw;
 }
 .l{
-    width: 50%;
+    width: 60%;
     padding: 2vw;
 }
 .l h3{
@@ -129,7 +129,7 @@ h3{
     font-size: 25px;
 }
 .r{
-    width: 50%;
+    width: 40%;
 
 }
 .sujitimg{
@@ -160,7 +160,7 @@ h3{
     grid-column:auto;
     grid-row: auto;
     justify-content: center;
-    width: auto;
+    width: 400px;
     padding: 2vw;
 }
 .skill img{
@@ -169,24 +169,23 @@ h3{
     margin: 0.5vw;
 }
 .skill img:hover{
-    scale: 1.4;
+    scale: 1.2;
     transform: translateY(-5px);
     transition-duration: 0.2s;
     transition-delay:0;
 }
 p{
-    padding:  1vw 0;
+    padding:  1vw 1vw;
     font-size: 18px;
 }
 
 .ptitle{
-    font-size: 3vw;
+    font-size: 40px;
     font-weight: 600;
-    padding: 2vw 13vw;
-
+    padding: 2vw 15vw;
 }
 .pro{
-    padding: 0 10vw;
+    padding: 0 10vw 10vw 10vw;
 }
 .projects{
     align-items: center;
@@ -201,7 +200,7 @@ p{
 }
 .p:hover{
     border: 2px solid rgb(0, 255, 157);
-    scale: 1.2;
+    transform: translateY(-10px);
 }
 .p img{
     width: 300px;
@@ -210,14 +209,22 @@ p{
 }
 .title{
     font-size: 20px;
-    padding-left: 10px;
+    padding: 10px 0 0 10px;
 }
 
+.dis{
+    font-size: 15px;
+    height: 150px;
+    padding: 10px 20px;
+}
 
+.txt,.txt a,.title,.dis{
+    background-color: rgb(0, 95, 81);
+}
 
-
-
-
+.p,.txt,.dis{
+    border-radius: 0 0 20px 20px;
+}
 
 
 
@@ -231,11 +238,16 @@ p{
         ". . ."
         ". . ."
         ". . ."; 
-        gap: 2vw 2vw;
+        gap: 2vw;
+        justify-items: center;
+        padding:0 20vw 10vw 20vw;
     }
     .p{
         padding: 0;
         margin: 0;
+    }
+    .ptitle{
+        padding: 3vw 18vw;
     }
 
     
@@ -254,6 +266,9 @@ p{
     .p{
         padding: 0;
         margin: 0;
+    }
+    .ptitle{
+        font-size: 50px;
     }
 }
 
@@ -280,7 +295,7 @@ p{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding:10vw 15vw;
+        padding:5vw 10vw;
     }
 }
 @media screen and (max-width: 900px) {
