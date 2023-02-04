@@ -91,7 +91,8 @@ body {
     cursor:pointer;
 }
 .restart:hover{
-    background-color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 @keyframes gradient {
     0% {
