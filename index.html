@@ -1,228 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' >
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sujit Akulwar | Software Engineer</title>
+
     <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
 </head>
 
-<body>
-    <header>
-        <ul>
-            <li class="img" id="img">
-                <a href="http://sujitakulwar.github.io/"><img id="imglogo" src="1.png" alt=""></a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <div onclick="home()">Home</div> 
-            </li>
-            <li>
-                <div onclick="about()">About me</div> 
-            </li>
-            <li>
-                <div onclick="pro()">Projects</div> 
-            </li>
-            <li >
-                <a class="resume" href="https://docs.google.com/document/d/11jFvZdTT2K5O1SKHlR7Q1ew0uOxq7Hbz4D4yqcTB3yA/edit?usp=sharing">
-                    resume
-                </a>
-            </li>
-        </ul>
+
+<body id="top">
+
+    <header class="site-header">
+
+        <div class="container header-inner">
+
+            <nav class="main-nav">
+
+                <ul>
+
+                    <li>
+                        <button class="nav-link" data-scroll-target="home">Home</button>
+                    </li>
+
+                    <li>
+                        <button class="nav-link" data-scroll-target="about">About</button>
+                    </li>
+
+                    <li>
+                        <button class="nav-link" data-scroll-target="experience">Experience</button>
+                    </li>
+
+                    <li>
+                        <button class="nav-link" data-scroll-target="projects">Projects</button>
+                    </li>
+
+                    <li>
+                        <a class="resume" href="https://drive.google.com/file/d/1qdOdSgSFh4S8oIO_6b7yDcJ7bgwNhH2s/view"
+                            target="_blank">
+                            Resume
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
     </header>
-    <section>
-        <h4>
-            hi , my name is 
-        </h4>
-        <h1>
-            Sujit Akulwar
-        </h1>
-        <h3>
-            I’m a web developer. Currently, I’m focused on , learning and practicing MERN Full Stack. 
-        </h3>
-        <h2>
-            <a href="https://github.com/sujitakulwar">
-                <img id="github" src="https://cdn.simpleicons.org/github/lightblue" alt="">
-                <li>Check out my Github !</li>
-            </a>
-        </h2>
-    </section>
-
-    <div class="about" id="about">
-        <div class="l">
-            <h3>
-                About me
-            </h3>
-            <p>
-                Hello! My name is Sujit and I am Third Year Student in Computer Engineering.My interest in web development started back in 2020 when I decided to try creating website for college project which taught me a lot about HTML & CSS!
-                <br> I been learning and working on web development for 2 years.
-            </p>
-            <p>
-                Here are a few technologies I’ve been working with :
-            </p>
-            <div class="skill">
-                <img src="https://cdn.simpleicons.org/html5/00d8ff" alt="">
-                <img src="https://cdn.simpleicons.org/css3/00d8ff" alt="">
-                <img src="https://cdn.simpleicons.org/bootstrap/00d8ff" alt="">
-                <img src="https://cdn.simpleicons.org/tailwindcss/00d8ff" alt="">
-                <img src="https://cdn.simpleicons.org/javascript/00d8ff" alt="">
-                <img src="https://cdn.simpleicons.org/jquery/00d8ff" alt="">
-                <img src="https://cdn.simpleicons.org/react/00d8ff" alt="">
-                <img src="https://cdn.simpleicons.org/next.js/00d8ff" alt="">
-                <img src="https://cdn.simpleicons.org/node.js/00d8ff" alt="">
-                <img src="https://cdn.simpleicons.org/npm/00d8ff" alt="">
-                <img src="https://cdn.simpleicons.org/c++/00d8ff" alt="">
-                <img src="https://cdn.simpleicons.org/python/00d8ff" alt="">
-                <img src="https://cdn.simpleicons.org/mysql/00d8ff" alt="">
-                <img src="https://cdn.simpleicons.org/mongodb/00d8ff" alt="">
-                <img src="https://cdn.simpleicons.org/php/00d8ff" alt="">
-                <img src="https://cdn.simpleicons.org/git/00d8ff" alt="">
-                <img src="https://cdn.simpleicons.org/github/00d8ff" alt="">
-            </div>
-        </div>
-        <div class="r">
-            <div class="sujitimg">
-                <img src="1234.jpg" alt="">
-            </div>
-        </div>
-    </div>
 
 
-    <div class="ptitle" id="ptitle">
-        Projects
-    </div>
-    <div class="pro" id="pro">
-        <div class="projects">
 
-            <div class="p">
-                <a href="/flex">
-                    <img src="flex.png" alt="">
-                </a>
-                <div class="txt">
-                    <a href="/flex">
-                        <div class="title">
-                            CSS Flex-box visualizer
-                        </div>
-                    </a>
-                    <div class="dis">
-                        a playground for beginner’s where they can use multiple flex-box properties.
-                        created using HTML5, CSS3, Javascript, tailwind.
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero" id="home">
+
+            <div class="container hero-inner">
+
+                <div class="hero-copy">
+
+                    <p class="eyebrow">Hi, my name is</p>
+
+                    <h1 class="hero-title">
+                        Sujit <span>Akulwar</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Software Engineer based in Pune specializing in full-stack web
+                        applications, scalable APIs, cloud deployments, and AI powered platforms.
+                    </p>
+
+
+                    <div class="hero-actions">
+
+                        <button class="primary-button nav-link" data-scroll-target="projects">
+                            View Projects
+                        </button>
+
+                        <a class="secondary-button"
+                            href="https://drive.google.com/file/d/1qdOdSgSFh4S8oIO_6b7yDcJ7bgwNhH2s/view"
+                            target="_blank">
+                            View Resume
+                        </a>
+                        <a class="secondary-button" href="https://github.com/sujitakulwar"
+                            style="display: flex; width: fit-content; gap: 10px;" class="hero-link" target="_blank">
+                            <img src="https://cdn.simpleicons.org/github/lightblue" alt="GitHub" class="hero-link-icon"
+                                style="height: 25px;">
+                            <span>GitHub</span>
+                        </a>
+
+                    </div>
+                    <div class="hero-meta">
+                        <span>Software Engineer at Tata Consultancy Services</span>
                     </div>
                 </div>
-            </div>
-            <div class="p">
-                <a href="/laptop">
-                    <img src="laptop.png" alt="">
-                </a>
-                <div class="txt">
-                    <a href="/laptop">
-                        <div class="title">
-                        Laptop Website
-                        </div>
-                    </a>
-                    <div class="dis">
-                        a LAPTOP shopping website.
-                        created using ReactJS(HTML5, CSS3, Javascript).
+
+
+                <div class="hero-visual">
+
+                    <div class="sujitimg">
+                        <img src="https://avatars.githubusercontent.com/u/85801946?s=400">
                     </div>
+
                 </div>
-            </div>
-            <div class="p">
-                <a href="/quiz">
-                    <img src="quiz.png" alt="">
-                </a>
-                <div class="txt">
-                    <a href="/quiz">
-                        <div class="title">
-                            Trivia game
-                        </div>
-                    </a>
-                    <div class="dis">
-                        a Trivia / quiz website using Api for multiple choice question.
-                        It contains different level of question with different catagories.
-                        created using HTML5, CSS3, Javascript, API.
-                    </div>
-                </div>
-            </div>
-            <div class="p">
-                <a href="LGMVIP-Web-task3">
-                    <img src="student.png" alt="">
-                </a>
-                <div class="txt">
-                    <a href="LGMVIP-Web-task3">
-                        <div class="title">
-                            student registration form
-                        </div>
-                    </a>
-                    <div class="dis">
-                        a simple website for form filling and adding imformation.
-                        created using HTML5, CSS3, Javascript, API.
-                    </div>
-                </div>
-            </div>
-            <div class="p">
-                <a href="/LGMVIP-Web-task1">
-                    <img src="todo.png" alt="">
-                </a>
-                <div class="txt">
-                    <a href="/LGMVIP-Web-task1">
-                        <div class="title">
-                            Todo list
-                        </div>
-                    </a>
-                    <div class="dis">
-                        a To Do List website.
-                        created using HTML5, CSS3, Javascript.
-                    </div>
-                </div>
-            </div>
-            <div class="p">
-                <a href="/tic-tac-toe/">
-                    <img src="/tictactoe.png" alt="">
-                </a>
-                <div class="txt">
-                    <a href="/tic-tac-toe/">
-                        <div class="title">
-                            tic-tac-toe
-                        </div>
-                    </a>
-                    <div class="dis">
-                        a tic-tac-toe game website.
-                        created using HTML5, CSS3, Javascript.
-                    </div>
-                </div>
-            </div>
-            <div class="p">
-                <a href="/simon-game/">
-                    <img src="simon.png" alt="">
-                </a>
-                <div class="txt">
-                    <a href="/simon-game/">
-                        <div class="title">
-                            Simon game
-                        </div>
-                    </a>
-                    <div class="dis">
-                        a simon game website.
-                        created using HTML5, CSS3, Javascript.
-                    </div>
-                </div>
+
             </div>
 
-        </div>
-    </div>
+        </section>
 
-    <footer style="display: flex;justify-content: center;align-items: center;">
-        <p style="padding-left: 1vw;">contact me : sujitakulwar@gmail.com</p> 
+
+        <!-- ABOUT -->
+
+        <section class="section about" id="about">
+
+            <div class="container about-inner">
+
+                <div class="about-text">
+
+                    <h2>About Me</h2>
+
+                    <p>
+                        Hello! I'm Sujit Akulwar, a Software Engineer at Tata Consultancy Services based in Pune.
+                        I specialize in building scalable full-stack applications using modern technologies like React,
+                        Next.js and Node.js.
+                    </p>
+
+                    <p>
+                        My work includes developing real-time dashboards, backend microservices and AI powered systems
+                        using Python and TensorFlow.
+                    </p>
+
+                    <p>
+                        I enjoy solving complex engineering problems and building systems that scale.
+                    </p>
+
+                </div>
+
+
+                <div class="about-skills">
+
+                    <h3>Technical Skills</h3>
+
+                    <ul class="skills-list">
+
+                        <li><b>Languages:</b> JavaScript, TypeScript, Python, C/C++, Java, SQL</li>
+
+                        <li><b>Frontend:</b> React.js, Next.js, Angular, HTML, CSS, Bootstrap, Tailwind</li>
+
+                        <li><b>Backend:</b> Node.js, Express.js, REST APIs, Socket.IO, Microservices</li>
+
+                        <li><b>AI / ML:</b> scikit-learn, TensorFlow, PyTorch, NLP, HuggingFace, RAG</li>
+
+                        <li><b>Databases:</b> MongoDB, MySQL, DynamoDB</li>
+
+                        <li><b>DevOps / Cloud:</b> AWS EC2, Lambda, Docker, CI/CD, Nginx</li>
+
+                        <li><b>Tools:</b> Git, GitHub, GitLab, Postman, Linux, Agile</li>
+
+                        <li><b>Security:</b> Secure Authentication, JWT, Input Validation</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- EXPERIENCE -->
+
+        <section class="section experience" id="experience">
+
+            <div class="container">
+
+                <h2>Work Experience</h2>
+
+                <div class="experience-item">
+
+                    <h3>Tata Consultancy Services — Software Engineer I</h3>
+
+                    <p>Pune, India | Feb 2025 – Present</p>
+
+                    <ul>
+
+                        <li>Built React / Next.js dashboards supporting research data visualization.</li>
+
+                        <li>Developed MERN microservices handling 10k+ API requests.</li>
+
+                        <li>Reduced API latency by 25% through backend optimization.</li>
+
+                        <li>Implemented Docker CI/CD pipelines reducing failures by 40%.</li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="experience-item">
+
+                    <h3>Tata Consultancy Services — Trainee</h3>
+
+                    <p>Trivandrum | Nov 2024 – Jan 2025</p>
+
+                    <ul>
+
+                        <li>Built AI task assignment system using scikit-learn.</li>
+
+                        <li>Developed serverless backend using AWS Lambda.</li>
+
+                        <li>Hosted React SPA on EC2 using Nginx.</li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="experience-item">
+
+                    <h3>StandardWings Technologies — Full Stack AI Intern</h3>
+
+                    <p>Remote | Jun 2023 – Nov 2024</p>
+
+                    <ul>
+
+                        <li>Developed LLM powered APIs and AI integrations.</li>
+
+                        <li>Built RAG pipelines using vector databases.</li>
+
+                        <li>Deployed AI services using Docker on AWS.</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PROJECTS -->
+
+        <section class="section projects-section" id="projects">
+
+            <div class="container">
+
+                <h2>Featured Projects</h2>
+
+                <div class="projects-grid">
+
+                    <article class="project-card">
+
+                        <div class="project-body">
+
+                            <h3>Saha-Yatri Ride Sharing Platform</h3>
+
+                            <p>
+                                Ride sharing platform with Flutter mobile app, Next.js dashboard and Node backend.
+                            </p>
+
+                            <p class="project-meta">
+                                Next.js · Node.js · Flutter · MongoDB · Socket.IO · AWS · Docker
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-body">
+
+                            <h3>CSS Flexbox Visualizer</h3>
+
+                            <p>
+                                Interactive playground to understand CSS flexbox properties.
+                            </p>
+
+                            <p class="project-meta">
+                                HTML · CSS · JavaScript
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-body">
+
+                            <h3>Laptop Store</h3>
+
+                            <p>
+                                React single page application demonstrating reusable components.
+                            </p>
+
+                            <p class="project-meta">
+                                React · JavaScript · CSS
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-body">
+
+                            <h3>Trivia Quiz App</h3>
+
+                            <p>
+                                Quiz platform fetching questions from API.
+                            </p>
+
+                            <p class="project-meta">
+                                JavaScript · REST API
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer class="site-footer">
+
+        <p>
+            Contact:
+            <a href="mailto:sujitakulwar@gmail.com">sujitakulwar@gmail.com</a>
+            | Pune, India
+        </p>
+
     </footer>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-      
-      <script src='https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples.min.js'></script>
-      
-      <script  src="./script.js"></script>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>

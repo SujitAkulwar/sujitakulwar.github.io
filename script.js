@@ -1,15 +1,19 @@
+document.querySelectorAll(".nav-link").forEach(btn => {
 
-function home() {
-    var home = document.getElementById("img");
-    home.scrollIntoView(); 
+btn.addEventListener("click", () => {
+
+const target = btn.getAttribute("data-scroll-target")
+
+const element = document.getElementById(target)
+
+if(element){
+
+element.scrollIntoView({
+behavior: "smooth"
+})
+
 }
 
-function about() {
-    var about = document.getElementById("about");
-    about.scrollIntoView(); 
-}
+})
 
-function pro() {
-    var pro = document.getElementById("ptitle");
-    pro.scrollIntoView();
-}
+})
